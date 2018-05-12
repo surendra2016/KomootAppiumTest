@@ -14,6 +14,10 @@ import org.testng.annotations.Test;
 
 import com.pom.pages.DiscoveryPage;
 import com.pom.pages.HikingActivityPage;
+import com.pom.pages.PlanPage;
+import com.pom.pages.SelectLocationForPlanPage;
+import com.pom.pages.SelectNameForPlanPage;
+import com.pom.pages.SummeryForPlanPage;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -26,6 +30,26 @@ public class KomootTest {
 	AppiumDriver<WebElement> driver = null;
 	DiscoveryPage discoveryPage;
 	HikingActivityPage hikingActivityPage;
+	PlanPage planPage;
+	SelectLocationForPlanPage selectLocationForPlanPage;
+	SelectNameForPlanPage selectNameForPlanPage;
+	SummeryForPlanPage summeryForPlanPage;
+	
+	public int generateRandomNumber() {
+		
+		/*
+		 Method to generate the random number 
+		 */
+		int max = 100;
+		int min = 1;
+		int diff = max - min;
+		Random rn = new Random();
+		int number = rn.nextInt(diff + 1);
+		number += min;
+		//System.out.print("The Random Number is " + number);
+		
+		return number;
+	}
 	
 	@BeforeClass
 	public void setUp() {
@@ -102,5 +126,56 @@ public class KomootTest {
 		discoveryPage = new DiscoveryPage(driver);
 		discoveryPage.scrollSportsHorizontal();
 		discoveryPage.scrollSportsHorizontalReverse();
+	}
+	
+	@Test
+	public void komootAppTest3_verifyPlanPage() {
+		
+		/*
+		 This test case simulates following test steps
+		 1. Open the Komooth app.
+		 2. By default user can see the 'Discovery' page as a landing page.
+		 3. Click on the 'Plan' button to plan a trip.
+		 4. Provide details like 'Sport type', 'Start location', 'Destination location'.
+		 5. Save the trip.
+		 6. Click 'back' button on the page object 'SummeryForPlanPage' to navigate back to 'PlanPage'.  
+		 */
+		
+		String source = "Paderborn";
+		String destination = "Hamm";
+		discoveryPage = new DiscoveryPage(driver);
+		planPage = discoveryPage.clickOnPlanActivityButton();
+		planPage.clickOnPlanSportActivityButton();
+		planPage.scrollSportsHorizontal();
+		planPage.scrollSportsHorizontalReverse();
+		planPage.clickOnPlanSportActivityButton();
+		selectLocationForPlanPage = planPage.selectSourceLocation();
+		selectLocationForPlanPage.searchLocationForPlan(source);
+		selectLocationForPlanPage.selectLocationFromList();
+		selectLocationForPlanPage = planPage.selectDestinationLocation();
+		selectLocationForPlanPage.searchLocationForPlan(destination);
+		selectLocationForPlanPage.selectLocationFromList();
+		
+		System.out.println("We'll wait for three seconds..");
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Wait for three seconds is over..");
+		selectNameForPlanPage = planPage.savePlan();
+		selectNameForPlanPage.typeNameForPlan(source+"To"+destination+"_"+this.generateRandomNumber());
+		
+		summeryForPlanPage = selectNameForPlanPage.saveNameForPlan();
+		
+		System.out.println("We'll wait for three seconds..");
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Wait for three seconds is over..");
+		
+		summeryForPlanPage.clickBackButtonOnSummeryPlan();
 	}
 }

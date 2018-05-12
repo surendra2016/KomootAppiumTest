@@ -51,8 +51,9 @@ public class DiscoveryPage {
 		discoverActivityButton.click();
 	}
 	
-	public void clickOnPlanActivityButton() {
+	public PlanPage clickOnPlanActivityButton() {
 		planActivityButton.click();
+		return new PlanPage(driver);
 	}
 	
 	public void clickOnMapActivityButton() {
