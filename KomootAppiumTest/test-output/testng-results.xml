@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="85134" started-at="2018-05-12T11:35:20Z" finished-at="2018-05-12T11:36:45Z">
+  <suite name="Default suite" duration-ms="127892" started-at="2018-05-12T15:36:56Z" finished-at="2018-05-12T15:39:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="85134" started-at="2018-05-12T11:35:20Z" finished-at="2018-05-12T11:36:45Z">
+    <test name="Default test" duration-ms="127892" started-at="2018-05-12T15:36:56Z" finished-at="2018-05-12T15:39:04Z">
       <class name="com.pom.testScripts.KomootTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="setUp" is-config="true" duration-ms="17631" started-at="2018-05-12T13:35:20Z" finished-at="2018-05-12T13:35:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="setUp" is-config="true" duration-ms="17565" started-at="2018-05-12T17:36:56Z" finished-at="2018-05-12T17:37:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="komootAppTest1_VerifySportType()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="komootAppTest1_VerifySportType" duration-ms="6912" started-at="2018-05-12T13:35:37Z" finished-at="2018-05-12T13:35:44Z">
+        <test-method status="PASS" signature="komootAppTest1_VerifySportType()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest1_VerifySportType" duration-ms="8057" started-at="2018-05-12T17:37:14Z" finished-at="2018-05-12T17:37:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- komootAppTest1_VerifySportType -->
-        <test-method status="PASS" signature="komootAppTest2_HorizontalSportType()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="komootAppTest2_HorizontalSportType" duration-ms="4411" started-at="2018-05-12T13:35:44Z" finished-at="2018-05-12T13:35:49Z">
+        <test-method status="PASS" signature="komootAppTest2_HorizontalSportType()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest2_HorizontalSportType" duration-ms="4548" started-at="2018-05-12T17:37:22Z" finished-at="2018-05-12T17:37:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- komootAppTest2_HorizontalSportType -->
-        <test-method status="PASS" signature="komootAppTest3_verifyPlanPage()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="komootAppTest3_verifyPlanPage" duration-ms="52838" started-at="2018-05-12T13:35:49Z" finished-at="2018-05-12T13:36:41Z">
+        <test-method status="PASS" signature="komootAppTest3_verifyPlanPage()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest3_verifyPlanPage" duration-ms="51603" started-at="2018-05-12T17:37:27Z" finished-at="2018-05-12T17:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- komootAppTest3_verifyPlanPage -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="quitDriver" is-config="true" duration-ms="3308" started-at="2018-05-12T13:36:41Z" finished-at="2018-05-12T13:36:45Z">
+        <test-method status="PASS" signature="komootAppTest4_verifyStartRecordingTextOnMapPage()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest4_verifyStartRecordingTextOnMapPage" duration-ms="2518" started-at="2018-05-12T17:38:18Z" finished-at="2018-05-12T17:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- komootAppTest4_verifyStartRecordingTextOnMapPage -->
+        <test-method status="PASS" signature="komootAppTest5_verifyStartRecordingOnMapPage()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest5_verifyStartRecordingOnMapPage" duration-ms="9449" started-at="2018-05-12T17:38:21Z" finished-at="2018-05-12T17:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- komootAppTest5_verifyStartRecordingOnMapPage -->
+        <test-method status="PASS" signature="komootAppTest6_verifyTitleOnRegionPage()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest6_verifyTitleOnRegionPage" duration-ms="3152" started-at="2018-05-12T17:38:30Z" finished-at="2018-05-12T17:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- komootAppTest6_verifyTitleOnRegionPage -->
+        <test-method status="PASS" signature="komootAppTest7_viewVouchersOnRegionPage()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest7_viewVouchersOnRegionPage" duration-ms="6197" started-at="2018-05-12T17:38:33Z" finished-at="2018-05-12T17:38:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- komootAppTest7_viewVouchersOnRegionPage -->
+        <test-method status="PASS" signature="komootAppTest8_viewVouchersOnRegionPage()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="komootAppTest8_viewVouchersOnRegionPage" duration-ms="20696" started-at="2018-05-12T17:38:40Z" finished-at="2018-05-12T17:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- komootAppTest8_viewVouchersOnRegionPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.pom.testScripts.KomootTest@6e1ec318]" name="quitDriver" is-config="true" duration-ms="4071" started-at="2018-05-12T17:39:00Z" finished-at="2018-05-12T17:39:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

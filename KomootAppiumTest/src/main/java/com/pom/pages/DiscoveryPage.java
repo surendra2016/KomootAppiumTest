@@ -56,16 +56,18 @@ public class DiscoveryPage {
 		return new PlanPage(driver);
 	}
 	
-	public void clickOnMapActivityButton() {
+	public MapPage clickOnMapActivityButton() {
 		mapActivityButton.click();
+		return new MapPage(driver);
 	}
 	
 	public void clickOnProfileActivityButton() {
 		profileActivityButton.click();
 	}
 	
-	public void clickOnRegionsActivityButton() {
+	public RegionPage clickOnRegionsActivityButton() {
 		regionsActivityButton.click();
+		return new RegionPage(driver);
 	}
 	
 	public HikingActivityPage clickOnHikingActivityButton() {
