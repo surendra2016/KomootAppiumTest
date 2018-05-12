@@ -13,6 +13,7 @@ public class HikingActivityPage {
 	
 	AppiumDriver<WebElement> driver;
 	
+	// Available elements on the page object
 	@AndroidFindBy(id="de.komoot.android:id/itbv_back_button_container_fl")
 	private WebElement backButton;
 	

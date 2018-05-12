@@ -33,7 +33,7 @@ public class KomootTest {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", "My Phone");
 		caps.setCapability("udid", "ECAZFG305028"); //Give Device ID of your mobile phone
-		//caps.setCapability("udid", "192.168.1.3:5555"); //Give Device ID of your mobile phone
+		//caps.setCapability("udid", "192.168.1.3:5555"); //Give ip address of your mobile phone in case connection is over wifi
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "4.4.2");
 		caps.setCapability("appPackage", "de.komoot.android");
@@ -59,6 +59,16 @@ public class KomootTest {
 	
 	@Test
 	public void komootAppTest1_VerifySportType() {
+		
+		/*
+		 This test case simulates following test steps
+		 1. Open the Komooth app.
+		 2. By default user can see the 'Discovery' page as a landing page.
+		 3. There are few other sports listed in a row under title 'Find your perfect Tour'.
+		 4. click on the first sport, i.e. Hiking.
+		 5. Verify whether the correct page is opened by verifying the text 'Hiking' on HikingActivityPage.
+		 6. Click on 'back' button to navigate back to the 'Discovery' page.
+		 */
 		
 		String expected_sport = "Hiking";
 		String expected_discovery_page_title = "Find your perfect Tour";

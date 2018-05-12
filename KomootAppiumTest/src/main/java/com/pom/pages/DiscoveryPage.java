@@ -15,6 +15,8 @@ public class DiscoveryPage {
 	
 	AppiumDriver<WebElement> driver;
 	
+	// Available elements on the page object
+	
 	@AndroidFindBy(xpath="//android.widget.TextView")
 	private List<WebElement> titleTexts;
 	
@@ -71,7 +73,6 @@ public class DiscoveryPage {
 	}
 	
 	public String getTextFromDiscoveryPage() {
-		//System.out.println("Following number of sports are available:" + titleTexts.size());
 		return titleTexts.get(0).getText();
 	}
 	
