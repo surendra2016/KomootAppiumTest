@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26558" started-at="2018-05-12T09:25:30Z" finished-at="2018-05-12T09:25:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26558" started-at="2018-05-12T09:25:30Z" finished-at="2018-05-12T09:25:57Z">
+      <class name="com.pom.testScripts.KomootTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="setUp" is-config="true" duration-ms="13070" started-at="2018-05-12T11:25:30Z" finished-at="2018-05-12T11:25:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="komootAppTest1_VerifySportType()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="komootAppTest1_VerifySportType" duration-ms="10212" started-at="2018-05-12T11:25:43Z" finished-at="2018-05-12T11:25:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- komootAppTest1_VerifySportType -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.pom.testScripts.KomootTest@10bdf5e5]" name="quitDriver" is-config="true" duration-ms="3257" started-at="2018-05-12T11:25:54Z" finished-at="2018-05-12T11:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.pom.testScripts.KomootTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
