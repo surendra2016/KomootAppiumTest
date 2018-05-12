@@ -87,4 +87,20 @@ public class KomootTest {
 		String actual_discovery_page_title = discoveryPage.getTextFromDiscoveryPage();
 		System.out.println("Actual sport: "+actual_discovery_page_title);
 	}
+	
+	@Test
+	public void komootAppTest2_HorizontalSportType() {
+		/*
+		 This test case simulates following test steps
+		 1. Open the Komooth app.
+		 2. By default user can see the 'Discovery' page as a landing page.
+		 3. There are few other sports listed in a row under title 'Find your perfect Tour'.
+		 4. Scroll horizontally to right to see all sports.
+		 5. Scroll back to the original position.  
+		 */
+		String expected_sport = "Hiking";
+		discoveryPage = new DiscoveryPage(driver);
+		discoveryPage.scrollSportsHorizontal();
+		discoveryPage.scrollSportsHorizontalReverse();
+	}
 }
