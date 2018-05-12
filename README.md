@@ -18,7 +18,7 @@ Android specific test cases for the app 'KOMOOT'.
 10. Download Apache Maven, setup maven environmental variables.
 11. Install testNG plug in for Eclipse from eclipse market store.
 12. Import the Appium project into eclipse.
-..1. Clone the appium project from following git repository and import it into eclipse as a general project. With this, the project would be stored to hard drive.
+  1. Clone the appium project from following git repository and import it into eclipse as a general project. With this, the project would be stored to hard drive.
 [https://github.com/surendra2016/KomootAppiumTest.git]
-..2. Import the project from hard drive as a Maven project into eclipse.
+  2. Import the project from hard drive as a Maven project into eclipse.
 13. Run the test file 'KomootTest.java' as a TestNG test.
