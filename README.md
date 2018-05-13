@@ -3,16 +3,16 @@
 Android specific test cases for the app 'KOMOOT'.
 
 ***
-### Installations and Setups (One time activity)
+### Installations and Setups (One time activity, This test project has been tested for Windows 10)
 ***
 
 1. Download and install latest version of Java (JDK).  Ideally, any Java 8 version should work fine with Appium/Selenium.
 2. Setup Java Environment Variables. This project mainly requires JAVA_HOME and PATH.
 3. Download and install Android Studio at [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html) and Click on 'DOWNLOAD ANDROID STUDIO' button. It would start downloading the android studio setup file according to your operating system. This test project has been tested for Windows 10. After downloading, install the android studio by following the instructions on the installer. Before downloading and installing android studio, make sure following system prerequisites are completed:
-    1. 'Step 1' and 'step 2' mentioned above should be completed.
+    1. 'Step 1' and 'step 2' mentioned above should be completed. 
     2. Your machine should be able to satisfy [these system requirements](https://developer.android.com/studio/#Requirements).
 4. Install additional Android SDK tools. Follow the steps given below to check if all the required SDK tools are already installed (you will have to open Android Studio to check this):
-    1. Go to Start > All Programs > Android Studio folder and then open Android Studio.  Android Studio Welcome Screen would be displayed.
+    1. Go to Start > All Programs > Android Studio folder and then open Android Studio.  Android Studio Welcome Screen would be displayed. 
     2. Click on Next button. You will be taken to Install Type screen.
     3. In the Install Type screen, let Standard option remain selected and then click on Next button. You will now be taken to the Select UI Theme screen.
     4. Click on Finish button. Android Studio will now start downloading these components.
@@ -40,7 +40,7 @@ Android specific test cases for the app 'KOMOOT'.
 ***
 
 10. Start the Appium server.
-    1. Open the Appium desktop app. 
+    1. Open the Appium desktop app.
     2. It shows three tabs: 'Simple', 'Advanced' and 'Presets'.
         * General section : This section contains the options which are required for both Android and iOS.
         * iOS section : This section contains options specific to iOS automation only.
@@ -59,21 +59,21 @@ Android specific test cases for the app 'KOMOOT'.
         * Next time while starting the server, just click on this preset and Start the appium server.
 11. Connect the android device to the laptop and turn on USB debugging on the Android device under test. Device can also be connected through wifi to avoid dealing with short USB cables.
 12. Make sure the device is connected properly through USB and is unlocked. The device must be listed in the output of the command: 'adb devices'. This project has been tested on following device configuration:
-    - Android OS : 4.4.2 
+    - Android OS : 4.4.2
     - device name: Asus zenfone.
     - RAM : 3GB
     - Internal memory: 16GB
 
 13. Import the Appium project into eclipse.
-    1. Clone the appium project from following git repository and import it into eclipse as a general project. With this, the project would be stored to hard drive. [https://github.com/surendra2016/KomootAppiumTest.git] (https://github.com/surendra2016/KomootAppiumTest.git)
+    1. Clone the appium project from following git repository and import it into eclipse as a general project. With this, the project would be stored to hard drive. [https://github.com/surendra2016/KomootAppiumTest.git] (https://github.com/surendra2016/KomootAppiumTest.git) 
     2. Import the project from hard drive as a Maven project into eclipse.
 
 ***
 ### Execute the test cases 
 ***
 
-14. Make sure Appium server is up and running..
-15. As of now, details of the app under test such as 'appPackage' and 'appActivity' names are already provided in the method setup() in the test project. 
+14. Make sure Appium server is up and running and the android device is unlocked and connected to the computer via USB.
+15. As of now, details of the app under test such as 'appPackage' and 'appActivity' names are already provided in the method setup() in the test project, so no other configuration details of the android application is required explicitly.
 16. Run the java file 'KomootTest.java' in eclipse as a TestNG test.
 
 ***
